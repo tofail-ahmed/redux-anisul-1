@@ -29,7 +29,23 @@ const addUser = (user) => {
   };
 };
 
+const counterReducer = (state=initialCounetrState, action) => {
+  switch (action.type) {
+    case INCREMENT:
+      return {
+        ...state,
+        count: state.count + 1,
+      };
+    case DECREMENT:
+      return {
+        ...state,
+        count: state.count1,
+      };
 
+    default:
+      state;
+  }
+};
 
 //! summary----
 
